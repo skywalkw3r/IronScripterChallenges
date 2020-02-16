@@ -1,10 +1,3 @@
-### Skywalker123 - Iron Scripter Challenge
-# Beginner Challenge
-#$NetConnections = Get-NetTcpConnection | Select-Object PSComputername,LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess,CreationTime,@{name='ConnectionAge';expression={$(Get-Date) - $_.CreationTime}}
-#$NetConnections | Where-Object {$_.LocalAddress -Match $(Get-NetIPAddress -InterfaceAlias Ethernet0) -and $_.State -match 'Listen|Established'}
-##################################################################################################################################################################
-# Advanced Challenge
-
 <#
 .Synopsis
    Display listening and established connections on a computer’s primary IPv4 address
